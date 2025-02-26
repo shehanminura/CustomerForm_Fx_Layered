@@ -1,4 +1,11 @@
 package service.custom;
 
-public interface CustomerService {
+import dto.Customer;
+import service.SuperService;
+
+public interface CustomerService extends SuperService {
+
+    boolean addCustomer(Customer customer);
+
+
 }
